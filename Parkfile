@@ -1,0 +1,13 @@
+require_relative 'app'
+
+Parklife.application.configure do |config|
+  # For a Sinatra "classic" app:
+  config.app = Sinatra::Application
+
+  # Serve trailing slash-less URLs from GitHub Pages.
+  config.nested_index = false
+end
+
+Parklife.application.routes do
+  root crawl: true
+end

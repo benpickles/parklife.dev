@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'decant'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
+gem 'parklife'
 gem 'sinatra'
 
 group :development do
