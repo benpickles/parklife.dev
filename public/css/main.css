@@ -1,0 +1,97 @@
+:root {
+  --code-bg: rgba(0, 0, 0, 0.075);
+}
+
+body {
+  background: #fcfefc;
+  color: #222;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 0 0;
+}
+h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0;
+}
+h4 {
+  font-size: 1.1rem;
+  margin: 1rem 0 0;
+}
+
+/* Highlight the URL#fragment's target heading. */
+:is(h2, h3):target {
+  background: #efe;
+  border-left: 0.5rem solid #9e9;
+  margin-left: -1rem;
+  margin-right: -0.75rem;
+  padding-left: 0.5rem;
+}
+
+p {
+  margin: 1rem 0 0;
+}
+p:first-child {
+  margin-top: 0;
+}
+:is(h1, h2, h3, h4) + p {
+  margin-top: 0.25rem;
+}
+
+/* Code block. */
+pre {
+  background: var(--code-bg);
+  border-radius: 0.4rem;
+  margin: 1rem -0.75rem 0;
+  padding: 0.6rem 0.75rem;
+}
+
+/* Inline code. */
+:not(pre) > code {
+  background: var(--code-bg);
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.2rem;
+}
+
+ul {
+  line-height: 1.3;
+  margin: 1rem 0 0 1rem;
+  padding: 0 0 0 0.5rem;
+}
+
+.header {
+  padding: 1rem 0 0;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav li {
+  display: inline;
+}
+.nav li:not(:first-child)::before {
+  content: ' • ';
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 60ch;
+  padding: 1rem;
+}
+
+.footer {
+  padding: 2rem 1rem 4rem;
+  text-align: center;
+}
