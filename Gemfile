@@ -6,6 +6,7 @@ gem 'decant'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
 gem 'parklife'
+gem 'rouge'
 gem 'sinatra'
 
 group :development do
