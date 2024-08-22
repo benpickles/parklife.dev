@@ -5,7 +5,8 @@ title: Configure Parklife
 
 Parklife is configured via the `Parkfile` file in the root of your project.
 
-Tip: Generate a starter `Parkfile` with [`parklife init`](/cli#init).
+> [!TIP]
+> Generate a starter `Parkfile` with [`parklife init`](/cli#init).
 
 ## Routes
 
@@ -32,15 +33,16 @@ Parklife.application.routes do
 end
 ```
 
-Tip: When [Rails integration](/rails) is enabled your Rails app's route helpers are available within the `routes` block.
-
-```ruby
-Parklife.application.routes do
-  get hidden_pages_path, crawl: true
-  get feed_path(format: :atom)
-  get sitemap_path(format: :xml)
-end
-```
+> [!TIP]
+> When [Rails integration](/rails) is enabled your Rails app's route helpers are available within the `routes` block.
+>
+> ```ruby
+> Parklife.application.routes do
+>   get hidden_pages_path, crawl: true
+>   get feed_path(format: :atom)
+>   get sitemap_path(format: :xml)
+> end
+> ```
 
 ## Settings
 
@@ -80,7 +82,8 @@ By default Parklife makes requests to your app at a base URL of `http://example.
 
 Frameworks typically provide URL helpers that -- via Rack -- are compatible with Parklife's `base` setting. This means that, for instance, Rails `*_url` helpers and the Sinatra `url` helper will construct correct URLs based on this value.
 
-Tip: The base URL can be [passed at build-time via the CLI](/cli#build) which will override the setting in your `Parkfile`.
+> [!NOTE]
+> Although your framework's URL helpers will output correct URLs you'll have to take care of manually-written links yourself -- this includes links generated from Markdown.
 
 #### Linking to full URLs
 
@@ -89,6 +92,9 @@ Sometimes you need to construct a _full_ URL and not just an absolute path -- pe
 ```ruby
 Parklife.application.config.base = 'https://parklife.dev'
 ```
+
+> [!TIP]
+> The base URL can be [passed at build-time via the CLI](/cli#build) which will override the setting in your `Parkfile`.
 
 #### Hosting at a subpath (ala GitHub Pages)
 
@@ -106,9 +112,8 @@ You can also pass just the subpath so in the following example the full `base` w
 Parklife.application.config.base = '/parklife'
 ```
 
-Warning: Although your framework's URL helpers will output correct URLs you'll have to take care of manually-written links yourself -- this includes links generated from Markdown.
-
-Tip: Use [`parklife get`](/cli#get) with a custom `--base` to quickly check whether your links are being generated correctly.
+> [!TIP]
+> Use [`parklife get`](/cli#get) with a custom `--base` to quickly check whether your links are being generated correctly.
 
 ### `build_dir`
 
@@ -118,7 +123,8 @@ Where Parklife saves its build files. Defaults to `build`.
 Parklife.application.config.build_dir = 'my/build/dir'
 ```
 
-Warning: Parklife destroys and recreates the build target directory before each build.
+> [!WARNING]
+> Parklife destroys and recreates the target `build_dir` before each build.
 
 ### `nested_index`
 
@@ -132,7 +138,8 @@ Many modern static hosting providers support mapping the URL `/my/nested/route` 
 
 Here's a [handy table of how various providers handle trailing slashes and the `.html` file extension](https://www.zachleat.com/web/trailing-slash/#results-table).
 
-Note: A `Parkfile` generated with [`parklife init --github-pages`](/cli#init---github-pages) comes with `nested_index = false`.
+> [!NOTE]
+> A `Parkfile` generated with [`parklife init --github-pages`](/cli#init---github-pages) comes with `nested_index = false`.
 
 ### `on_404`
 

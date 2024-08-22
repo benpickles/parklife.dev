@@ -93,3 +93,48 @@ ul {
   padding: 2rem 1rem 4rem;
   text-align: center;
 }
+
+.alert {
+  border-radius: calc(0.5rem + 1px);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0.5rem 0;
+  padding: 1px 1px 1px calc(0.5rem + 1px);
+}
+.alert-caution {
+  background: crimson;
+}
+.alert-important {
+  background: blueviolet;
+}
+.alert-note {
+  background: lightskyblue;
+}
+.alert-tip {
+  background: lightgreen;
+}
+.alert-warning {
+  background: orange;
+}
+.alert > div {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-left-radius: 0.35rem;
+  border-top-left-radius: 0.35rem;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem 0.75rem 0.75rem;
+}
+.alert-heading {
+  /* For some reason flex + align-items does a better job of centring the image
+   * than using vertical-align on the image itself. */
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  gap: 0.2em;
+}
+.alert-heading img {
+  height: 1.2em;
+}
+.alert pre {
+  margin-left: 0;
+  margin-right: 0;
+}

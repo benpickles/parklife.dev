@@ -39,19 +39,19 @@ Output the full Parklife config settings.
 
 `parklife get PATH` can be really useful, it's basically "view source" for your app and outputs the provided path's HTML to the terminal. You can also pass a custom `--base` to override the [`config.base`](/config#base) configured in your `Parkfile`.
 
-A couple of useful things:
+> [!TIP]
+> Quickly check that the correct URLs are generated when using a `--base` subpath:
+>
+> ```sh
+> parklife get / --base /foo | grep /link/to/check
+> ```
 
-Pipe the output to [`bat`](https://github.com/sharkdp/bat) to get syntax-highlighting in the terminal:
-
-```sh
-parklife get /my/page | bat -lhtml
-```
-
-Check that the correct URLs are being generated when adding a `--base` subpath:
-
-```sh
-parklife get /my/page --base /foo | grep /my/page
-```
+> [!TIP]
+> Get syntax-highlighting in the terminal by piping the output to [`bat`](https://github.com/sharkdp/bat):
+>
+> ```sh
+> parklife get /my/page | bat -lhtml
+> ```
 
 ## `help`
 
@@ -65,7 +65,8 @@ Parklife's CLI is built with [Thor](http://whatisthor.com) so you get the usual 
 
 Run `parklife init` to create a starter `Parkfile` configuration file and a `bin/static-build` script used to generate the full production static build.
 
-Note that `parklife init` can be safely run in an existing project and will ask before overwriting files (because it's built with [Thor](http://whatisthor.com)).
+> [!NOTE]
+> `parklife init` can be safely run in an existing project and will ask before overwriting files (because it's built with [Thor](http://whatisthor.com)).
 
 There are also some flags to tailor the generated files:
 

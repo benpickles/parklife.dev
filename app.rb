@@ -3,6 +3,8 @@ require 'kramdown'
 require 'kramdown-parser-gfm'
 require 'sinatra'
 
+require_relative 'lib/kramdown_enhancements'
+
 # Define a frontmatter-aware content collection wrapper.
 Page = Decant.define(dir: 'content', ext: 'md') do
   frontmatter :title
