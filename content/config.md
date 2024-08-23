@@ -5,7 +5,7 @@ title: Configure Parklife
 
 Parklife is configured via the `Parkfile` file in the root of your project.
 
-> [!TIP]
+> [!NOTE]
 > Generate a starter `Parkfile` with [`parklife init`](/cli#init).
 
 ## Routes
@@ -33,7 +33,7 @@ Parklife.application.routes do
 end
 ```
 
-> [!TIP]
+> [!NOTE]
 > When [Rails integration](/rails) is enabled your Rails app's route helpers are available within the `routes` block.
 >
 > ```ruby
