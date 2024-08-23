@@ -5,7 +5,8 @@ title: Parklife and Rails
 
 A Rails app is a Rack app and as such things Just Work™ but Parklife does provide a few enhancements to make life easier when working with Rails.
 
-Tip: Run [`parklife init --rails`](/cli#init---rails) to tailor the generated `Parkfile` and `bin/static-build` for a Rails app.
+> [!NOTE]
+> Run [`parklife init --rails`](/cli#init---rails) to tailor the generated `Parkfile` and `bin/static-build` for a Rails app.
 
 Parklife's Rails integration can be enabled in your `Parkfile` with the following:
 
