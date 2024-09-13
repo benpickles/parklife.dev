@@ -68,20 +68,18 @@ ul {
 }
 
 .header {
-  padding: 1rem 0 0;
+  padding: 1rem 1rem 0;
   text-align: center;
 }
 
 .nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.nav li {
-  display: inline;
-}
-.nav li:not(:first-child)::before {
-  content: ' • ';
 }
 
 .main {
