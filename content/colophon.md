@@ -18,8 +18,9 @@ end
 
 # Now find the page and work with it.
 page = Page.find('colophon')
-page.title   # => "Colophon"
-page.content # => "---\ntitle: Colophon\n---# Colophon\n"...
+page.content     # => "Colophon\n\nThis site is a"...
+page.frontmatter # => {:title=>"Colophon"}
+page.title       # => "Colophon"
 ```
 
 Markdown is handled by [Kramdown](https://kramdown.gettalong.org) with syntax-highlighting by [Rouge](https://rouge.jneen.net) styled by [Pygments](https://github.com/richleland/pygments-css/blob/master/default.css). I added support for [GitHub-style alert callouts](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#alerts) by [extending Kramdown](https://github.com/benpickles/parklife.dev/blob/main/lib/kramdown_enhancements.rb).
