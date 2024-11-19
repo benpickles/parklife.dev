@@ -27,7 +27,7 @@ jobs:
     - run: bin/static-build --base "${{ steps.pages.outputs.base_url }}"
 
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3
       if: github.ref == 'refs/heads/main' # Only upload on main branch.
       with:
         path: build/
