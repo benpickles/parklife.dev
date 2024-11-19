@@ -13,4 +13,5 @@ group :development do
   gem 'rackup'
   gem 'rb-fsevent'
   gem 'rerun'
+  gem 'webrick'
 end
