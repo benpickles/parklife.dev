@@ -17,12 +17,9 @@ set :markdown,
   smartypants: true,
   views: 'content'
 
-get '/' do
-  @page = Page.find('home')
-  erb :page
-end
-
-get '/:slug' do
-  @page = Page.find(params[:slug])
+get '/*slug' do
+  slug = params[:slug].empty? ? 'home' : params[:slug]
+  @page = Page.find(slug)
+  @page_title = @page.title
   erb :page
 end
