@@ -2,6 +2,9 @@
 
 set -eu
 
+# Run the app in production mode.
+export APP_ENV=production
+
 # Build with Parklife - and forward arguments sent to this script.
 bundle exec parklife build "$@"
 
