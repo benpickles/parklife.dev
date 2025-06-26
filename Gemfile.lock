@@ -3,12 +3,12 @@ GEM
   specs:
     base64 (0.2.0)
     decant (0.3.0)
-    ffi (1.17.0-aarch64-linux-gnu)
-    ffi (1.17.0-arm-linux-gnu)
-    ffi (1.17.0-arm64-darwin)
-    ffi (1.17.0-x86-linux-gnu)
-    ffi (1.17.0-x86_64-darwin)
-    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.2-aarch64-linux-gnu)
+    ffi (1.17.2-arm-linux-gnu)
+    ffi (1.17.2-arm64-darwin)
+    ffi (1.17.2-x86-linux-gnu)
+    ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -92,4 +92,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.5.9
+   2.6.7
