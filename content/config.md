@@ -124,7 +124,7 @@ Parklife.application.config.build_dir = 'my/build/dir'
 ```
 
 > [!WARNING]
-> Parklife destroys and recreates the target `build_dir` before each build.
+> Parklife deletes everything in the target `build_dir` before each build.
 
 ### `nested_index`
 
