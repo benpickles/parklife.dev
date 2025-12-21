@@ -33,10 +33,13 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
-    parklife (0.8.0)
+    parklife (0.8.1)
       nokogiri
       rack-test
       thor
+    parklife-sinatra (0.3.0)
+      parklife (>= 0.8.1)
+      sinatra
     racc (1.8.1)
     rack (3.2.4)
     rack-protection (4.2.1)
@@ -84,6 +87,7 @@ DEPENDENCIES
   kramdown
   kramdown-parser-gfm
   parklife
+  parklife-sinatra
   rackup
   rb-fsevent
   rerun

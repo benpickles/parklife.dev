@@ -6,6 +6,7 @@ gem 'decant'
 gem 'kramdown'
 gem 'kramdown-parser-gfm'
 gem 'parklife'
+gem 'parklife-sinatra'
 gem 'rouge'
 gem 'sinatra'
 
