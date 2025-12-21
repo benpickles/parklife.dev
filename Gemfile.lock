@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    base64 (0.2.0)
+    base64 (0.3.0)
     decant (0.4.0)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-arm-linux-gnu)
@@ -16,9 +16,9 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    logger (1.6.6)
+    logger (1.7.0)
     mini_portile2 (2.8.9)
-    mustermann (3.0.3)
+    mustermann (3.0.4)
       ruby2_keywords (~> 0.0.1)
     nokogiri (1.18.10)
       mini_portile2 (~> 2.8.2)
@@ -39,11 +39,11 @@ GEM
       thor
     racc (1.8.1)
     rack (3.2.4)
-    rack-protection (4.1.1)
+    rack-protection (4.2.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
       rack (>= 3.0.0, < 4)
-    rack-session (2.1.0)
+    rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
     rack-test (2.2.0)
@@ -59,16 +59,16 @@ GEM
       strscan
     rouge (4.3.0)
     ruby2_keywords (0.0.5)
-    sinatra (4.1.1)
+    sinatra (4.2.1)
       logger (>= 1.6.0)
       mustermann (~> 3.0)
       rack (>= 3.0.0, < 4)
-      rack-protection (= 4.1.1)
+      rack-protection (= 4.2.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     strscan (3.1.0)
     thor (1.4.0)
-    tilt (2.6.0)
+    tilt (2.6.1)
     webrick (1.9.1)
 
 PLATFORMS
