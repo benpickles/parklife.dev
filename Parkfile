@@ -1,4 +1,4 @@
-require 'parklife/sinatra'
+require 'parklife-sinatra'
 
 # Assuming your Sinatra app lives in ./app.rb:
 require_relative 'app'
