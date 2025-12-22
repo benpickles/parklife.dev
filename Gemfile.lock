@@ -72,7 +72,7 @@ GEM
     strscan (3.1.0)
     thor (1.4.0)
     tilt (2.6.1)
-    webrick (1.9.1)
+    webrick (1.9.2)
 
 PLATFORMS
   aarch64-linux
