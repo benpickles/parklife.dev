@@ -60,7 +60,7 @@ GEM
       listen (~> 3.0)
     rexml (3.3.2)
       strscan
-    rouge (4.3.0)
+    rouge (4.7.0)
     ruby2_keywords (0.0.5)
     sinatra (4.2.1)
       logger (>= 1.6.0)
